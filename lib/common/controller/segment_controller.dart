@@ -13,13 +13,13 @@ class SegmentController extends ChangeNotifier {
   bool executingScript = false;
 
   final Map<String, int> segmentMap = {
-    '00001': 0, // a
-    '00010': 1, // b
-    '00011': 2, // c
-    '00100': 3, // d
-    '00101': 4, // e
-    '00110': 5, // f
-    '00111': 6, // g
+    '1000000': 0, // a
+    '0100000': 1, // b
+    '0010000': 2, // c
+    '0001000': 3, // d
+    '0000100': 4, // e
+    '0000010': 5, // f
+    '0000001': 6, // g
   };
 
   Future<void> executeCommands(List<String> lines,
